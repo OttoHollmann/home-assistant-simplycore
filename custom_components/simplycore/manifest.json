@@ -1,11 +1,12 @@
 {
   "domain": "simplycore",
   "name": "SimplyCore",
+  "categories": ["climate.fans_ventilation"],
   "codeowners": ["@OttoHollmann"],
   "config_flow": true,
   "documentation": "https://github.com/OttoHollmann/home-assistant-simplycore",
-  "issue_tracker": "https://github.com/OttoHollmann/home-assistant-simplycore/issues",
   "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/OttoHollmann/home-assistant-simplycore/issues",
   "requirements": ["python-socketio[asyncio_client]>=5.11.0,<6.0.0"],
   "version": "0.1.0"
 }
