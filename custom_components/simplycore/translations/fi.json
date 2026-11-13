@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Tuloilmavirta"},
+      "exhaust_airflow": {"name": "Poistoilmavirta"},
+      "supply_temperature": {"name": "Tuloilman lämpötila"},
+      "outside_temperature": {"name": "Ulkolämpötila"},
+      "temperature_sensor_1": {"name": "Sisälämpötila"},
+      "co2_sensor_1": {"name": "CO₂-anturi 1"},
+      "requested_temperature": {"name": "Pyydetty lämpötila"},
+      "bathroom_boost_time_remaining": {"name": "Kylpyhuoneen tehostuksen jäljellä oleva aika"},
+      "kitchen_boost_time_remaining": {"name": "Keittiön tehostuksen jäljellä oleva aika"},
+      "full_apartment_boost_time_remaining": {"name": "Asunnon tehostuksen jäljellä oleva aika"},
+      "unit_condition": {"name": "Laitteen tila"},
+      "ventilation_mode": {"name": "Ilmanvaihtotila"},
+      "active_heating_mode": {"name": "Aktiivinen lämmitystila"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Virta"},
+      "bathroom_boost_active": {"name": "Kylpyhuoneen tehostus aktiivinen"},
+      "kitchen_boost_active": {"name": "Keittiön tehostus aktiivinen"},
+      "full_apartment_boost_active": {"name": "Huoneiston tehostus aktiivinen"},
+      "ventilation_air_heating_active": {"name": "Tuloilman lämmitys aktiivinen"},
+      "central_heating_demand_estimated": {"name": "Arvioitu lämmitystarve"}
+    },
+    "select": {"ventilation_mode": {"name": "Ilmanvaihtotila"}},
+    "switch": {"schedule": {"name": "Aikataulu"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Lämmitysasetuksen lämpötila"},
+      "default_heating_preset_normal": {"name": "Oletuslämmitys - Normaali"},
+      "default_heating_preset_vacation": {"name": "Oletuslämmitys - Loma"}
+    }
+  }
+}

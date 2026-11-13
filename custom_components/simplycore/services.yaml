@@ -1,0 +1,43 @@
+set_schedule:
+  name: Set schedule
+  description: Replace the unit's weekly minimal-ventilation events.
+  fields:
+    entry_id:
+      name: Config entry
+      description: SimplyCore unit whose schedule should be updated.
+      required: true
+      selector:
+        config_entry:
+          integration: simplycore
+    events:
+      name: Events
+      description: Add one row for each weekly ventilation interval.
+      required: true
+      selector:
+        object:
+          multiple: true
+          fields:
+            start:
+              label: Start
+              required: true
+              selector:
+                time:
+            end:
+              label: End
+              required: true
+              selector:
+                time:
+            day:
+              label: Day (0-6; numbering not verified)
+              required: true
+              selector:
+                number:
+                  min: 0
+                  max: 6
+                  step: 1
+                  mode: box
+    enabled:
+      name: Enabled
+      description: Optionally enable or disable the schedule when saving events.
+      selector:
+        boolean:

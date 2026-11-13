@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Flusso aria di mandata"},
+      "exhaust_airflow": {"name": "Flusso aria di ripresa"},
+      "supply_temperature": {"name": "Temperatura aria di mandata"},
+      "outside_temperature": {"name": "Temperatura esterna"},
+      "temperature_sensor_1": {"name": "Temperatura interna"},
+      "co2_sensor_1": {"name": "Sensore CO₂ 1"},
+      "requested_temperature": {"name": "Temperatura richiesta"},
+      "bathroom_boost_time_remaining": {"name": "Tempo boost bagno rimanente"},
+      "kitchen_boost_time_remaining": {"name": "Tempo boost cucina rimanente"},
+      "full_apartment_boost_time_remaining": {"name": "Tempo boost appartamento rimanente"},
+      "unit_condition": {"name": "Stato unità"},
+      "ventilation_mode": {"name": "Modalità ventilazione"},
+      "active_heating_mode": {"name": "Modalità riscaldamento attiva"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Alimentazione"},
+      "bathroom_boost_active": {"name": "Boost bagno attivo"},
+      "kitchen_boost_active": {"name": "Boost cucina attivo"},
+      "full_apartment_boost_active": {"name": "Boost appartamento attivo"},
+      "ventilation_air_heating_active": {"name": "Riscaldamento aria di mandata attivo"},
+      "central_heating_demand_estimated": {"name": "Richiesta di riscaldamento stimata"}
+    },
+    "select": {"ventilation_mode": {"name": "Modalità ventilazione"}},
+    "switch": {"schedule": {"name": "Programmazione"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatura preset riscaldamento"},
+      "default_heating_preset_normal": {"name": "Riscaldamento predefinito - Normale"},
+      "default_heating_preset_vacation": {"name": "Riscaldamento predefinito - Vacanza"}
+    }
+  }
+}

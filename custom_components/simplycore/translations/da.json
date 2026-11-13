@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Indblæsningsluft"},
+      "exhaust_airflow": {"name": "Udsugningsluft"},
+      "supply_temperature": {"name": "Indblæsningstemperatur"},
+      "outside_temperature": {"name": "Udendørstemperatur"},
+      "temperature_sensor_1": {"name": "Indetemperatur"},
+      "co2_sensor_1": {"name": "CO₂-sensor 1"},
+      "requested_temperature": {"name": "Ønsket temperatur"},
+      "bathroom_boost_time_remaining": {"name": "Resterende boosttid - badeværelse"},
+      "kitchen_boost_time_remaining": {"name": "Resterende boosttid - køkken"},
+      "full_apartment_boost_time_remaining": {"name": "Resterende boosttid - hele lejligheden"},
+      "unit_condition": {"name": "Enhedstilstand"},
+      "ventilation_mode": {"name": "Ventilationstilstand"},
+      "active_heating_mode": {"name": "Aktiv opvarmningstilstand"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Strøm"},
+      "bathroom_boost_active": {"name": "Badeværelsesboost aktiv"},
+      "kitchen_boost_active": {"name": "Køkkenboost aktiv"},
+      "full_apartment_boost_active": {"name": "Lejlighedsboost aktiv"},
+      "ventilation_air_heating_active": {"name": "Opvarmning af indblæsningsluft aktiv"},
+      "central_heating_demand_estimated": {"name": "Anslået varmebehov"}
+    },
+    "select": {"ventilation_mode": {"name": "Ventilationstilstand"}},
+    "switch": {"schedule": {"name": "Tidsplan"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatur for varmeindstilling"},
+      "default_heating_preset_normal": {"name": "Standardvarme - Normal"},
+      "default_heating_preset_vacation": {"name": "Standardvarme - Ferie"}
+    }
+  }
+}

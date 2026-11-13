@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Caudal de impulsión"},
+      "exhaust_airflow": {"name": "Caudal de extracción"},
+      "supply_temperature": {"name": "Temperatura de impulsión"},
+      "outside_temperature": {"name": "Temperatura exterior"},
+      "temperature_sensor_1": {"name": "Temperatura interior"},
+      "co2_sensor_1": {"name": "Sensor de CO₂ 1"},
+      "requested_temperature": {"name": "Temperatura solicitada"},
+      "bathroom_boost_time_remaining": {"name": "Tiempo restante de ventilación del baño"},
+      "kitchen_boost_time_remaining": {"name": "Tiempo restante de ventilación de la cocina"},
+      "full_apartment_boost_time_remaining": {"name": "Tiempo restante de ventilación de la vivienda"},
+      "unit_condition": {"name": "Estado de la unidad"},
+      "ventilation_mode": {"name": "Modo de ventilación"},
+      "active_heating_mode": {"name": "Modo de calefacción activo"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Alimentación"},
+      "bathroom_boost_active": {"name": "Ventilación intensiva del baño activa"},
+      "kitchen_boost_active": {"name": "Ventilación intensiva de la cocina activa"},
+      "full_apartment_boost_active": {"name": "Ventilación intensiva del apartamento activa"},
+      "ventilation_air_heating_active": {"name": "Calentamiento del aire de impulsión activo"},
+      "central_heating_demand_estimated": {"name": "Demanda de calefacción estimada"}
+    },
+    "select": {"ventilation_mode": {"name": "Modo de ventilación"}},
+    "switch": {"schedule": {"name": "Programación"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatura del modo de calefacción"},
+      "default_heating_preset_normal": {"name": "Calefacción predeterminada - Normal"},
+      "default_heating_preset_vacation": {"name": "Calefacción predeterminada - Vacaciones"}
+    }
+  }
+}

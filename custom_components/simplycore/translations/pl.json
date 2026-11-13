@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Przepływ nawiewu"},
+      "exhaust_airflow": {"name": "Przepływ wywiewu"},
+      "supply_temperature": {"name": "Temperatura nawiewu"},
+      "outside_temperature": {"name": "Temperatura zewnętrzna"},
+      "temperature_sensor_1": {"name": "Temperatura wewnętrzna"},
+      "co2_sensor_1": {"name": "Czujnik CO₂ 1"},
+      "requested_temperature": {"name": "Temperatura zadana"},
+      "bathroom_boost_time_remaining": {"name": "Pozostały czas boostu łazienki"},
+      "kitchen_boost_time_remaining": {"name": "Pozostały czas boostu kuchni"},
+      "full_apartment_boost_time_remaining": {"name": "Pozostały czas boostu całego mieszkania"},
+      "unit_condition": {"name": "Stan urządzenia"},
+      "ventilation_mode": {"name": "Tryb wentylacji"},
+      "active_heating_mode": {"name": "Aktywny tryb ogrzewania"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Zasilanie"},
+      "bathroom_boost_active": {"name": "Boost łazienki aktywny"},
+      "kitchen_boost_active": {"name": "Boost kuchni aktywny"},
+      "full_apartment_boost_active": {"name": "Boost całego mieszkania aktywny"},
+      "ventilation_air_heating_active": {"name": "Aktywne ogrzewanie nawiewu"},
+      "central_heating_demand_estimated": {"name": "Szacowane zapotrzebowanie na ogrzewanie"}
+    },
+    "select": {"ventilation_mode": {"name": "Tryb wentylacji"}},
+    "switch": {"schedule": {"name": "Harmonogram"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatura trybu ogrzewania"},
+      "default_heating_preset_normal": {"name": "Domyślne ogrzewanie - Normalne"},
+      "default_heating_preset_vacation": {"name": "Domyślne ogrzewanie - Wakacje"}
+    }
+  }
+}

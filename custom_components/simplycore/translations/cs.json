@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Přívodní průtok vzduchu"},
+      "exhaust_airflow": {"name": "Odvodní průtok vzduchu"},
+      "supply_temperature": {"name": "Teplota přiváděného vzduchu"},
+      "outside_temperature": {"name": "Venkovní teplota"},
+      "temperature_sensor_1": {"name": "Teplota v bytě"},
+      "co2_sensor_1": {"name": "CO₂ senzor 1"},
+      "requested_temperature": {"name": "Požadovaná teplota"},
+      "bathroom_boost_time_remaining": {"name": "Zbývající čas větrání koupelny"},
+      "kitchen_boost_time_remaining": {"name": "Zbývající čas větrání kuchyně"},
+      "full_apartment_boost_time_remaining": {"name": "Zbývající čas větrání bytu"},
+      "unit_condition": {"name": "Stav jednotky"},
+      "ventilation_mode": {"name": "Režim větrání"},
+      "active_heating_mode": {"name": "Aktivní režim vytápění"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Napájení"},
+      "bathroom_boost_active": {"name": "Nárazové větrání koupelny aktivní"},
+      "kitchen_boost_active": {"name": "Nárazové větrání kuchyně aktivní"},
+      "full_apartment_boost_active": {"name": "Nárazové větrání bytu aktivní"},
+      "ventilation_air_heating_active": {"name": "Ohřev přiváděného vzduchu aktivní"},
+      "central_heating_demand_estimated": {"name": "Požadavek na vytápění (odhad)"}
+    },
+    "select": {"ventilation_mode": {"name": "Režim větrání"}},
+    "switch": {"schedule": {"name": "Časový rozvrh"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Teplota režimu vytápění"},
+      "default_heating_preset_normal": {"name": "Výchozí vytápění - Normální"},
+      "default_heating_preset_vacation": {"name": "Výchozí vytápění - Dovolená"}
+    }
+  }
+}

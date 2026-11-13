@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Zuluftstrom"},
+      "exhaust_airflow": {"name": "Abluftstrom"},
+      "supply_temperature": {"name": "Zulufttemperatur"},
+      "outside_temperature": {"name": "Außentemperatur"},
+      "temperature_sensor_1": {"name": "Raumtemperatur"},
+      "co2_sensor_1": {"name": "CO₂-Sensor 1"},
+      "requested_temperature": {"name": "Solltemperatur"},
+      "bathroom_boost_time_remaining": {"name": "Restzeit Badlüftung"},
+      "kitchen_boost_time_remaining": {"name": "Restzeit Küchenlüftung"},
+      "full_apartment_boost_time_remaining": {"name": "Restzeit Wohnungslüftung"},
+      "unit_condition": {"name": "Gerätezustand"},
+      "ventilation_mode": {"name": "Lüftungsmodus"},
+      "active_heating_mode": {"name": "Aktiver Heizmodus"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Stromversorgung"},
+      "bathroom_boost_active": {"name": "Badezimmer-Boost aktiv"},
+      "kitchen_boost_active": {"name": "Küchen-Boost aktiv"},
+      "full_apartment_boost_active": {"name": "Wohnungs-Boost aktiv"},
+      "ventilation_air_heating_active": {"name": "Zuluftheizung aktiv"},
+      "central_heating_demand_estimated": {"name": "Heizbedarf (geschätzt)"}
+    },
+    "select": {"ventilation_mode": {"name": "Lüftungsmodus"}},
+    "switch": {"schedule": {"name": "Zeitplan"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatur Heizstufe"},
+      "default_heating_preset_normal": {"name": "Standardheizung - Normal"},
+      "default_heating_preset_vacation": {"name": "Standardheizung - Urlaub"}
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Tilluftsflöde"},
+      "exhaust_airflow": {"name": "Frånluftsflöde"},
+      "supply_temperature": {"name": "Tilluftstemperatur"},
+      "outside_temperature": {"name": "Utomhustemperatur"},
+      "temperature_sensor_1": {"name": "Inomhustemperatur"},
+      "co2_sensor_1": {"name": "CO₂-sensor 1"},
+      "requested_temperature": {"name": "Begärd temperatur"},
+      "bathroom_boost_time_remaining": {"name": "Återstående badrumsboost"},
+      "kitchen_boost_time_remaining": {"name": "Återstående köksboost"},
+      "full_apartment_boost_time_remaining": {"name": "Återstående boost för hela lägenheten"},
+      "unit_condition": {"name": "Enhetsstatus"},
+      "ventilation_mode": {"name": "Ventilationsläge"},
+      "active_heating_mode": {"name": "Aktivt värmeläge"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Strömförsörjning"},
+      "bathroom_boost_active": {"name": "Badrumsboost aktiv"},
+      "kitchen_boost_active": {"name": "Köksboost aktiv"},
+      "full_apartment_boost_active": {"name": "Lägenhetsboost aktiv"},
+      "ventilation_air_heating_active": {"name": "Tilluftsvärme aktiv"},
+      "central_heating_demand_estimated": {"name": "Uppskattat värmebehov"}
+    },
+    "select": {"ventilation_mode": {"name": "Ventilationsläge"}},
+    "switch": {"schedule": {"name": "Schema"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Temperatur för värmeläge"},
+      "default_heating_preset_normal": {"name": "Standardvärme - Normal"},
+      "default_heating_preset_vacation": {"name": "Standardvärme - Semester"}
+    }
+  }
+}

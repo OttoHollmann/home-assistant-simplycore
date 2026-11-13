@@ -1,0 +1,34 @@
+{
+  "entity": {
+    "sensor": {
+      "supply_airflow": {"name": "Befújt légáram"},
+      "exhaust_airflow": {"name": "Elszívott légáram"},
+      "supply_temperature": {"name": "Befújt levegő hőmérséklete"},
+      "outside_temperature": {"name": "Külső hőmérséklet"},
+      "temperature_sensor_1": {"name": "Beltéri hőmérséklet"},
+      "co2_sensor_1": {"name": "1. CO₂-érzékelő"},
+      "requested_temperature": {"name": "Kért hőmérséklet"},
+      "bathroom_boost_time_remaining": {"name": "Fürdőszobai szellőztetés hátralévő ideje"},
+      "kitchen_boost_time_remaining": {"name": "Konyhai szellőztetés hátralévő ideje"},
+      "full_apartment_boost_time_remaining": {"name": "Lakásszellőztetés hátralévő ideje"},
+      "unit_condition": {"name": "Egység állapota"},
+      "ventilation_mode": {"name": "Szellőztetési mód"},
+      "active_heating_mode": {"name": "Aktív fűtési mód"}
+    },
+    "binary_sensor": {
+      "powered": {"name": "Tápellátás"},
+      "bathroom_boost_active": {"name": "Fürdőszobai intenzív szellőztetés aktív"},
+      "kitchen_boost_active": {"name": "Konyhai intenzív szellőztetés aktív"},
+      "full_apartment_boost_active": {"name": "Lakás teljes intenzív szellőztetése aktív"},
+      "ventilation_air_heating_active": {"name": "Befújt levegő fűtése aktív"},
+      "central_heating_demand_estimated": {"name": "Becsült fűtési igény"}
+    },
+    "select": {"ventilation_mode": {"name": "Szellőztetési mód"}},
+    "switch": {"schedule": {"name": "Ütemezés"}},
+    "number": {
+      "heating_preset_temperature": {"name": "Fűtési fokozat hőmérséklete"},
+      "default_heating_preset_normal": {"name": "Alapértelmezett fűtés - Normál"},
+      "default_heating_preset_vacation": {"name": "Alapértelmezett fűtés - Nyaralás"}
+    }
+  }
+}
